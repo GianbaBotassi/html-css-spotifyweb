@@ -9,7 +9,11 @@
 
 /* COLORS */
 :root{
-
+    --black:#000000;
+    --darkblue:#141922;
+    --darkgrey:#3e3e3f;
+    --grey:#bfc0b9;
+    --green:#435f26;
 }
 
 /*************************************************
@@ -17,18 +21,55 @@
  *************************************************/
 
  /* LAYOUT */
-
+.row{
+    display: flex;
+}
 
 
 
  /* TEXT */
-
+body{
+    color: var(--grey);
+}
 
 
 /*************************************************
     SITE SECTIONS
  *************************************************/
+/* UPPER SECTION */
+#upper{
+    height: calc(100vh - 100px);
+    display: flex;
+}
 
+/* LEFTBAR */
+#leftbar{
+    width: 200px;
+    background-color: var(--black);
+    z-index: 999;
+}
 
+/* CONTENTS */
+#contents{
+    width: calc(100% - 200px);
+    background-color: var(--darkblue);
+    overflow-y: scroll;
+}
+#upgrade-bar{
+    height: 100px;
+    width: 100%;
+    background-color: var(--black);
+    opacity: 0.5;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
 
- 
+/* FOOTER */
+footer{
+    background-color: var(--darkgrey);
+    height: 100px;
+ }
+ /* DEBUG RULES */
+ footer{
+ }
