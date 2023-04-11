@@ -25,6 +25,7 @@ ul{
  *************************************************/
 
  /* LAYOUT */
+
 .wrapper{
     padding: 1rem 1rem;
 }
@@ -35,11 +36,15 @@ ul{
     display: flex;
     flex-direction: column;
 }
+.padding{
+    padding: 0.2rem 1rem;
+}
 
 
 
 
  /* TEXT */
+
 body{
     color: var(--grey);
     font-family: 'PT Sans', sans-serif;
@@ -48,7 +53,9 @@ body{
 .txt-center{
     text-align: center;
 }
+
 /* TEXT COLORS */
+
 .txt-black{
     color: var(--black);
 }
@@ -58,6 +65,7 @@ body{
 
 
 /* BG COLORS */
+
 .bg-black{
     background-color: var(--black);
 }
@@ -78,7 +86,9 @@ body{
 /*************************************************
     SITE SECTIONS
  *************************************************/
+
 /* UPPER SECTION */
+
 #upper{
     height: calc(100vh - 5rem);
     display: flex;
@@ -87,10 +97,11 @@ body{
 /* LEFTBAR */
 
 /* Top left bar */
+
 #leftbar{
     z-index: 2;
     font-size: 0.8rem;
-    padding: 1rem 1rem 0.3rem 1rem;
+    padding: 1rem 0 0.3rem;
     flex: 1;
     overflow: auto;
     min-width: 10rem;
@@ -101,16 +112,25 @@ body{
 #logo img{
     max-width: 70%;
 }
+
+/* Main menu */
+
 .main-menu{
     margin-bottom: 1rem;
 }
-.main-menu li{
+.main-menu div{
     margin-bottom: 0.5rem ;
 }
 .main-menu img, .bottom-left-bar div:last-child{
     max-width: 100%;
     height: 1.2rem;
 }
+.border-left-green{
+    border-left: 3px solid var(--green);
+}
+
+/* Playlist */
+
 .new-playlist{
     margin-top: 0.5rem;
 }
@@ -126,6 +146,7 @@ body{
 }
 
 /* Bottom left bar */
+
 #bottom-left-bar{
     margin-top: auto;
 }
@@ -148,10 +169,14 @@ body{
 }
 
 /* CONTENTS */
+
 #contents{
     overflow-y: scroll;
     position: relative;
 }
+
+/* Upgrade bar */
+
 #upgrade-bar{
     height: 5rem;
     width: 100%;
@@ -169,7 +194,46 @@ body{
     height: fit-content;
 
 }
+
+/* Labels */
+
+.labels{
+    margin-top: 6rem;
+    gap: 2rem;
+    font-size: 0.8rem;
+}
+.evidence-green{
+    border: 1px var(--green) solid;
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* FOOTER */
+
 footer{
     height: 5rem;
     position: fixed;
@@ -177,6 +241,7 @@ footer{
     padding: 0 0.5rem;
     font-size: 0.6rem;
  }
+
 /* Left footbar */
 
  #left-footbar img{
@@ -204,7 +269,7 @@ footer{
 
  /* Bottom */
 .actual-time, .total-time{
-    width: 10%;
+    width: 5%;
 }
 .bar{
     height: 0.2rem;
@@ -226,63 +291,17 @@ footer{
 
 #right-footbar{
     gap: 1rem;
-
+}
+#right-footbar i{
+    width: 5%;
 }
 
  .volume-bar{
-    width: 50%;
+    width: 40%;
  }
  .volume-bar span{
     width: 20%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- /* .bottom-player span{
-    display: inline-block;
- }
- .progress-bar{
-    width: 80%;
- }
- .progress-bar, .volume-bar{
-    height: 0.2rem;
-    border-radius: 5rem;
-}
-.progress-bar, .volume-bar{
-    border-radius: 20px;
-}
-.progress-bar span, .volume-bar span{
-    height: 100%;
-    display: inline-block;
-} */
-
-
-
-
-
-
-
-
-
-
 
 
 
