@@ -38,6 +38,12 @@
 .between{
     justify-content: space-between;
 }
+.just-center{
+    justify-content: center;
+}
+.just-end{
+    justify-content: flex-end;
+}
 
 
 
