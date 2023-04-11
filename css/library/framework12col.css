@@ -133,7 +133,7 @@
 
 /* RESPONSIVE SM */
 
-/* @media screen and (min-width:576px){
+@media screen and (min-width:576px){
     .container{
         max-width: 540px;
         margin: 0 auto;
@@ -228,11 +228,11 @@
     .col-sm-offset-11{
         margin-left: calc((100%/12) * 11);
     }
-} */
+}
 
 /* RESPONSIVE MD */
 
-/* @media screen and (min-width:768px){
+@media screen and (min-width:768px){
     .container{
         max-width: 720px;
         margin: 0 auto;
@@ -327,11 +327,11 @@
     .col-md-offset-11{
         margin-left: calc((100%/12) * 11);
     }
-} */
+}
 
 /* RESPONSIVE LG */
 
-/* @media screen and (min-width:992px){
+@media screen and (min-width:992px){
     .container{
         max-width: 960px;
         margin: 0 auto;
@@ -426,4 +426,4 @@
     .col-lg-offset-11{
         margin-left: calc((100%/12) * 11);
     }
-} */
+}

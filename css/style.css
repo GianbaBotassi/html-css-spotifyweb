@@ -45,6 +45,9 @@ body{
     font-family: 'PT Sans', sans-serif;
     font-weight: bold;
 }
+.txt-center{
+    text-align: center;
+}
 /* TEXT COLORS */
 .txt-black{
     color: var(--black);
@@ -174,6 +177,8 @@ footer{
     padding: 0 0.5rem;
     font-size: 0.6rem;
  }
+/* Left footbar */
+
  #left-footbar img{
     height: 2rem;
  }
@@ -181,6 +186,10 @@ footer{
     gap: 1rem;
     font-size: 0.8rem;
 }
+
+/* Middle footbar */
+
+/* Top */
 
  #middle-footbar .top-player,  #middle-footbar .bottom-player{
     gap: 1rem;
@@ -192,6 +201,67 @@ footer{
  .fa-circle-play{
     font-size: 1.7rem;
  }
+
+ /* Bottom */
+.actual-time, .total-time{
+    width: 10%;
+}
+.bar{
+    height: 0.2rem;
+    border-radius: 20px;
+    display: inline-block;
+}
+.song-progress-bar{
+    width: 70%;
+}
+.song-progress-bar span{
+    width: 25%;
+}
+
+
+
+
+
+ /* Right footbar */
+
+#right-footbar{
+    gap: 1rem;
+
+}
+
+ .volume-bar{
+    width: 50%;
+ }
+ .volume-bar span{
+    width: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* .bottom-player span{
+    display: inline-block;
+ }
+ .progress-bar{
+    width: 80%;
+ }
  .progress-bar, .volume-bar{
     height: 0.2rem;
     border-radius: 5rem;
@@ -201,10 +271,23 @@ footer{
 }
 .progress-bar span, .volume-bar span{
     height: 100%;
-    display: inline-block;   
-}
-#right-footbar{
-    gap: 1rem;
-}
+    display: inline-block;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  /* DEBUG RULES */
