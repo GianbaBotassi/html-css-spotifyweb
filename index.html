@@ -5,19 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/library/framework12col.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div id="upper">
-        <div id="leftbar">
-
+        <div id="leftbar" class="bg-black row-column">
+            <div id="logo">
+            <img src="img/logo.svg" alt="Logo Spotify">
+            </div>
+            <ul class="main-menu">
+                <li class="row align-middle">
+                    <img src="img/home.svg" alt="Home">
+                    <span class="marg-left">Home</span>
+                </li>
+                <li class="row align-middle">
+                    <img src="img/search.svg" alt="Search">
+                    <span class="marg-left">Cerca</span>
+                </li>
+                <li class="row align-middle">
+                    <img src="img/libreria.svg" alt="libreria">
+                    <span class="marg-left">La tua libreria</span>
+                </li>
+            </ul>
+            <div class="playlist-section">
+                <span class="txt-white bold">PLAYLIST</span>
+                <div class="new-playlist row align-middle">
+                    <i class="fa-sharp fa-solid fa-square-plus"></i>
+                    <div class="marg-left bold">Crea Playlist</div>
+                </div>
+            </div>   
+            <ul class="playlist">
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+            </ul>  
+            <div id="bottom-left-bar">
+                <div class="row align-middle">
+                    <img src="img/download.svg" alt="Download image">
+                    <span class="marg-left">Installa app</span>
+                </div>
+                <div class="row align-middle">
+                    <span id="profile"></span>
+                    <span class="marg-left txt-white bold">John Doe</span>
+                </div>
+            </div>
         </div>
-        <div id="contents">
-            <div id="upgrade-bar"></div>
+
+        <div id="contents" class="bg-darkblue">
+ 
+            <div id="upgrade-bar" class="bg-black row">
+                <div class="txt-white">EFFETTUA L?UPGRADE</div>
+            </div>
         </div>
     </div>
-    <footer>
+    <footer class="bg-darkgrey">
     </footer>    
 </body>
 </html>
