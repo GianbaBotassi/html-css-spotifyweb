@@ -82,6 +82,9 @@
     <!-- FOOTER SECTION -->
 
     <footer class="bg-darkgrey row between align-middle">
+
+        <!-- Leftbar -->
+
         <div id="left-footbar" class="col-xs-2 row between">
             <div class="song-info row align-middle">
                 <img src="img/sinister.jpeg" alt="Sinister album">
@@ -95,7 +98,13 @@
                 <i class="fa-regular fa-folder"></i>
             </div>
         </div>
+
+        <!-- Middle bar -->
+
         <div id="middle-footbar" class="col-xs-4 col-xs-offset-2 row-column txt-white">
+
+            <!-- Top -->
+
             <div class="top-player row align-middle just-center">
                 <i class="fa-solid fa-shuffle"></i>
                 <i class="fa-sharp fa-solid fa-backward-step"></i>
@@ -103,20 +112,26 @@
                 <i class="fa-sharp fa-solid fa-backward-step fa-rotate-180"></i>
                 <i class="fa-solid fa-rotate-right"></i>
             </div>
-            <div class="bottom-player row just-center align-middle">
-                <span>0:25</span>
-                <span class="progress-bar audio-progress-bar bg-grey">
-                    <span class="bg-white"></span>
+
+            <!-- Bottom -->
+            
+            <div class="bottom-player row between align-middle">
+                <span class="actual-time txt-center">0:25</span>
+                <span class="bar song-progress-bar bg-grey">
+                    <span class="bar bg-white"></span>
                 </span>
-                <span>4:35</span>
+                <span class="total-time txt-center">4:35</span>
             </div>
         </div>
-        <div id="right-footbar" class="col-xs-2 col-xs-offset-2 row align-middle txt-white">
+
+        <!-- Right bar -->
+
+        <div id="right-footbar" class="col-xs-2 col-xs-offset-2 row align-middle between txt-white">
             <i class="fa-solid fa-list"></i>
             <i class="fa-sharp fa-solid fa-desktop"></i>
             <i class="fa-solid fa-volume-high"></i>
-            <span class="volume-bar bg-grey">
-                <span class="bg-white"></span>
+            <span class="bar volume-bar bg-grey">
+                <span class="bar bg-white"></span>
             </span>
         </div>
     </footer>    
