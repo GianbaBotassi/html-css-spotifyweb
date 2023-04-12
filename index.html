@@ -16,53 +16,68 @@
     <div id="upper">
 
         <!-- LEFTBAR SECTION -->
-        <div id="leftbar" class="col-xs-2 bg-black row-column">
-            <div class="padding" id="logo">
-                <img src="img/logo.svg" alt="Logo Spotify">
-            </div>
-            <div class="main-menu row align-middle border-left-green padding">
-                <img src="img/home.svg" alt="Home">
-                <span class="marg-left">Home</span>
-            </div>
-            <div class="main-menu row align-middle padding">
-                <img src="img/search.svg" alt="Search">
-                <span class="marg-left">Cerca</span>
-            </div>
-            <div class="main-menu row align-middle padding">
-                <img src="img/libreria.svg" alt="libreria">
-                <span class="marg-left">La tua libreria</span>
-            </div>    
-            <div class="playlist-section padding">
-                <span class="txt-white">PLAYLIST</span>
-                <div class="new-playlist row align-middle">
-                    <i class="fa-sharp fa-solid fa-square-plus"></i>
-                    <div class="marg-left">Crea Playlist</div>
+        <div id="leftbar" class="bg-black row">
+            <div id="leftbar-big" class="row-column">
+                <div class="padding" id="logo">
+                    <img src="img/logo.svg" alt="Logo Spotify">
                 </div>
-            </div>   
-            <ul class="playlist padding">
-                <li>Nome Playlist</li>
-                <li>Nome Playlist</li>
-                <li>Nome Playlist</li>
-                <li>Nome Playlist</li>
-                <li>Nome Playlist</li>
-                <li>Nome Playlist</li>
-                <li>Nome Playlist</li>
-            </ul>  
-            <div id="bottom-left-bar" class="padding">
-                <div class="row align-middle">
+                <div class="main-menu row align-middle border-left-green padding">
+                    <img src="img/home.svg" alt="Home">
+                    <span class="marg-left">Home</span>
+                </div>
+                <div class="main-menu row align-middle padding">
+                    <img src="img/search.svg" alt="Search">
+                    <span class="marg-left">Cerca</span>
+                </div>
+                <div class="main-menu row align-middle padding">
+                    <img src="img/libreria.svg" alt="libreria">
+                    <span class="marg-left">La tua libreria</span>
+                </div>    
+                <div class="playlist-section padding">
+                    <span class="txt-white">PLAYLIST</span>
+                    <div class="new-playlist row align-middle">
+                        <i class="fa-sharp fa-solid fa-square-plus"></i>
+                        <div class="marg-left">Crea Playlist</div>
+                    </div>
+                </div>   
+                <ul class="playlist padding">
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                </ul>  
+                <div id="bottom-leftbar" class="padding">
+                    <div class="row align-middle">
+                        <img src="img/download.svg" alt="Download image">
+                        <span class="marg-left">Installa app</span>
+                    </div>
+                    <div class="row align-middle">
+                        <span id="profile"></span>
+                        <span class="marg-left txt-white">John Doe</span>
+                    </div>
+                </div>
+            </div>
+            <div id="leftbar-small" class="row row-column">
+                <div>
+                    <img src="img/logo-small.svg" alt="Logo small">
+                    <img src="img/home.svg" alt="Home">
+                    <img src="img/search.svg" alt="Search">
+                    <img src="img/libreria.svg" alt="Library">
+                </div>
+                <div id="bottom-leftbar-small" class="row-column align-middle">
                     <img src="img/download.svg" alt="Download image">
-                    <span class="marg-left">Installa app</span>
-                </div>
-                <div class="row align-middle">
                     <span id="profile"></span>
-                    <span class="marg-left txt-white">John Doe</span>
                 </div>
             </div>
+
         </div>
 
         <!-- CONTENTS SECTION -->
 
-        <div id="contents" class="col-xs-10 bg-darkblue">
+        <div id="contents" class="bg-darkblue wrapper">
 
             <!-- Labels -->
 
@@ -79,7 +94,7 @@
 
             <!-- Recently played -->
 
-            <div class="wrapper">
+            <div>
                 <div>
                     <h3 class="txt-white">Recently played</h3>
                     <div class="recently row">
@@ -170,32 +185,6 @@
                 </div>
             </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             <!-- UPGRADE BAR -->
 
             <div id="upgrade-bar" class="bg-black row">
@@ -210,7 +199,7 @@
 
         <!-- Leftbar -->
 
-        <div id="left-footbar" class="col-xs-2 row between">
+        <div id="left-footbar" class="row between">
             <div class="song-info row align-middle">
                 <img src="img/sinister.jpeg" alt="Sinister album">
                 <div class="marg-left">
@@ -226,7 +215,7 @@
 
         <!-- Middle bar -->
 
-        <div id="middle-footbar" class="col-xs-4 col-xs-offset-2 row-column txt-white">
+        <div id="middle-footbar" class="row-column txt-white">
 
             <!-- Top -->
 
@@ -240,7 +229,7 @@
 
             <!-- Bottom -->
             
-            <div class="bottom-player row between align-middle">
+            <div class="bottom-player row just-center align-middle">
                 <span class="actual-time txt-center">0:25</span>
                 <span class="bar song-progress-bar bg-grey">
                     <span class="bar bg-white"></span>
@@ -251,7 +240,7 @@
 
         <!-- Right bar -->
 
-        <div id="right-footbar" class="col-xs-2 col-xs-offset-2 row align-middle between txt-white">
+        <div id="right-footbar" class="row align-middle between txt-white">
             <i class="fa-solid fa-list"></i>
             <i class="fa-sharp fa-solid fa-desktop"></i>
             <i class="fa-solid fa-volume-high"></i>
