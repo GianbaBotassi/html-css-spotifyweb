@@ -40,6 +40,12 @@ ul{
 .padding{
     padding: 0.2rem 1rem;
 }
+.relative{
+    position: relative;
+}
+.pointer{
+    cursor: pointer;
+}
 
  /* TEXT */
 
@@ -79,9 +85,55 @@ body{
     background-color: var(--white);
 }
 
+/*************************************************
+    HOVER
+ *************************************************/
+
+/* Album hover */
+
+.img-wrapper i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.5rem;
+    display: none;
+}
+.img-wrapper:hover i{
+    display: block;
+}
+.img-wrapper:hover img{
+    filter: brightness(0.5);
+}
+
+/* Upgrade spotify call to action hover */
+
+#call-to-action div:hover, .scale-play:hover {
+    transform: scale(1.2);
+}
+
+/* White hover */
+
+.white-hover:hover{
+    color: var(--white);
+}
+.white-hover-underline:hover{
+    color: var(--white);
+    text-decoration: underline;
+}
+
+/* Progress and volume bar hover */
+
+.song-progress-bar:hover .bar, .volume-bar:hover .bar{
+    background-color: var(--green);
+}
+.song-progress-bar:hover .white-point-bar, .volume-bar:hover .white-point-bar{
+    display: inline-block;
+}
+
 
 /*************************************************
-    SITE SECTIONS
+                        SITE SECTIONS
  *************************************************/
 
 /* UPPER SECTION */
@@ -91,7 +143,9 @@ body{
     display: flex;
 }
 
-/* LEFTBAR */
+/*************************************************
+    LEFTBAR
+ *************************************************/
 
 #leftbar{
     z-index: 1;
@@ -106,7 +160,7 @@ body{
     height: 4rem;
 }
 #logo img{
-    max-width: 70%;
+    max-width: 100%;
 }
 
 /* Main menu */
@@ -170,8 +224,6 @@ body{
     display: none;
     width: 100%;
     padding: 0.3rem;
-
-
 }
 #leftbar-small div:last-of-type{
     margin-top: auto;
@@ -180,8 +232,13 @@ body{
     max-width: 100%;
     margin-bottom: 0.5rem;
 }
+#leftbar-small #bottom-leftbar-small img{
+    margin-left: -0.1rem;
+}
 
-/* CONTENTS */
+/*************************************************
+    CONTENTS
+ *************************************************/
 
 #contents{
     overflow-y: scroll;
@@ -198,31 +255,10 @@ body{
     margin: 1rem 0;
 }
 
-
-/* Upgrade bar */
-
-#upgrade-bar{
-    height: 5rem;
-    width: 100%;
-    opacity: 0.5;
-    position: fixed;
-    left: 0;
-    top: 0;
-    justify-content: flex-end;
-    padding: 1rem 0.5rem;
-    font-size: 0.7rem;
-}
-#upgrade-bar div{
-    padding: 0.5rem 2.5rem;
-    border: 2px var(--white) solid;
-    border-radius: 5rem;
-    height: fit-content;
-}
-
 /* Labels */
 
 .labels{
-    margin-top: 6rem;
+    margin-top: 5rem;
     gap: 2rem;
     font-size: 0.6rem;
 }
@@ -256,8 +292,29 @@ body{
     object-fit: cover;
 }
 
+/* Upgrade bar */
 
-/* FOOTER */
+#call-to-action{
+    height: 4rem;
+    width: 100%;
+    opacity: 0.5;
+    position: fixed;
+    left: 0;
+    top: 0;
+    justify-content: flex-end;
+    padding: 1rem 2rem;
+    font-size: 0.7rem;
+}
+#call-to-action div{
+    padding: 0.5rem 2.5rem;
+    border: 2px var(--white) solid;
+    border-radius: 5rem;
+    height: fit-content;
+}
+
+/*************************************************
+    FOOTER
+ *************************************************/
 
 footer{
     height: 5rem;
@@ -311,8 +368,19 @@ footer{
 .song-progress-bar{
     width: 70%;
 }
-.song-progress-bar span{
+.song-progress-bar .bar{
     width: 25%;
+}
+.white-point-bar{
+    height: 0.7rem;
+    width: 0.7rem;
+    border-radius: 50%;
+    background-color: var(--white);
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(50%,-35%);
+    display: none;
 }
 
  /* Right footbar */
@@ -329,7 +397,7 @@ footer{
  .volume-bar{
     width: 40%;
  }
- .volume-bar span{
+ .volume-bar .bar{
     width: 20%;
 }
 
@@ -393,6 +461,19 @@ footer{
         gap:0.5rem;
     }
  }
+
+/*************************************************
+    RESPONSIVE call to action height
+ *************************************************/
+@media screen and (max-height:575px){
+    #call-to-action{
+        display: none ;
+    }
+    .labels{
+        margin-top: 1rem;
+    }
+}
+
 
 
  /* DEBUG RULES */

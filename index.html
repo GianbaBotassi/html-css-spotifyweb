@@ -19,21 +19,21 @@
         <div id="leftbar" class="bg-black row">
             <div id="leftbar-big" class="row-column">
                 <div class="padding" id="logo">
-                    <img src="img/logo.svg" alt="Logo Spotify">
+                    <img class="pointer" src="img/logo.svg" alt="Logo Spotify">
                 </div>
-                <div class="main-menu row align-middle border-left-green padding">
+                <div class="main-menu row align-middle border-left-green padding white-hover pointer">
                     <img src="img/home.svg" alt="Home">
                     <span class="marg-left">Home</span>
                 </div>
-                <div class="main-menu row align-middle padding">
+                <div class="main-menu row align-middle padding white-hover pointer">
                     <img src="img/search.svg" alt="Search">
                     <span class="marg-left">Cerca</span>
                 </div>
-                <div class="main-menu row align-middle padding">
+                <div class="main-menu row align-middle padding white-hover pointer">
                     <img src="img/libreria.svg" alt="libreria">
                     <span class="marg-left">La tua libreria</span>
                 </div>    
-                <div class="playlist-section padding">
+                <div class="playlist-section padding white-hover pointer">
                     <span class="txt-white">PLAYLIST</span>
                     <div class="new-playlist row align-middle">
                         <i class="fa-sharp fa-solid fa-square-plus"></i>
@@ -41,20 +41,20 @@
                     </div>
                 </div>   
                 <ul class="playlist padding">
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
+                    <li class="white-hover pointer">Nome Playlist</li>
+                    <li class="white-hover pointer">Nome Playlist</li>
+                    <li class="white-hover pointer">Nome Playlist</li>
+                    <li class="white-hover pointer">Nome Playlist</li>
+                    <li class="white-hover pointer">Nome Playlist</li>
+                    <li class="white-hover pointer">Nome Playlist</li>
+                    <li class="white-hover pointer">Nome Playlist</li>
                 </ul>  
                 <div id="bottom-leftbar" class="padding">
-                    <div class="row align-middle">
+                    <div class="row align-middle pointer white-hover">
                         <img src="img/download.svg" alt="Download image">
                         <span class="marg-left">Installa app</span>
                     </div>
-                    <div class="row align-middle">
+                    <div class="row align-middle pointer">
                         <span id="profile"></span>
                         <span class="marg-left txt-white">John Doe</span>
                     </div>
@@ -62,14 +62,14 @@
             </div>
             <div id="leftbar-small" class="row row-column">
                 <div>
-                    <img src="img/logo-small.svg" alt="Logo small">
-                    <img src="img/home.svg" alt="Home">
-                    <img src="img/search.svg" alt="Search">
-                    <img src="img/libreria.svg" alt="Library">
+                    <img class="pointer" src="img/logo-small.svg" alt="Logo small">
+                    <img class="pointer" src="img/home.svg" alt="Home">
+                    <img class="pointer" src="img/search.svg" alt="Search">
+                    <img class="pointer" src="img/libreria.svg" alt="Library">
                 </div>
                 <div id="bottom-leftbar-small" class="row-column align-middle">
-                    <img src="img/download.svg" alt="Download image">
-                    <span id="profile"></span>
+                    <img class="pointer" src="img/download.svg" alt="Download image">
+                    <span class="pointer" id="profile"></span>
                 </div>
             </div>
 
@@ -82,60 +82,66 @@
             <!-- Labels -->
 
             <ul class="labels row just-center">
-                <li class="row-column align-middle">IN EVIDENZA
+                <li class="row-column align-middle white-hover pointer">IN EVIDENZA
                     <div class="evidence-green"></div>
                 </li>
-                <li>PODCAST</li>
-                <li>CLASSIFICHE</li>
-                <li>GENERI E MOOD</li>
-                <li>NUOVE USCITE</li>
-                <li>SCOPRI</li>
+                <li class="white-hover pointer">PODCAST</li>
+                <li class="white-hover pointer">CLASSIFICHE</li>
+                <li class="white-hover pointer">GENERI E MOOD</li>
+                <li class="white-hover pointer">NUOVE USCITE</li>
+                <li class="white-hover pointer">SCOPRI</li>
             </ul>
 
             <!-- Recently played -->
 
             <div>
                 <div>
-                    <h3 class="txt-white">Recently played</h3>
+                    <h3 class="txt-white pointer">Recently played</h3>
                     <div class="recently row">
-                        <div class="card txt-center">
-                            <div>
+                        <div class="card txt-center pointer">
+                            <div class="img-wrapper relative">
                                 <img src="img/metal_lifting.jpg" alt="Heavy Metal">
+                                        <i class="txt-white fa-regular fa-circle-play"></i>
                             </div>
                             <h5 class="txt-white">Heavy Metal</h5>
                             <span>Subtitle</span>
                         </div>
-                        <div class="card txt-center">
-                            <div>
+                        <div class="card txt-center pointer">
+                            <div class="img-wrapper relative">
                                 <img src="img/stranger.jpeg" alt="Strangers Things">
+                                    <i class="txt-white fa-regular fa-circle-play"></i>
                             </div>
                             <h5 class="txt-white">Strangers Things, Vol. 1 (a Netflix Original Series Soundtrack)</h5>
                             <span>Kyle Dixon & Michael Stein</span>
                         </div>
-                        <div class="card txt-center">
-                            <div>
+                        <div class="card txt-center pointer">
+                            <div class="img-wrapper relative">
                                 <img src="img/aquietplace.jpeg" alt="A Quiet place">
+                                    <i class="txt-white fa-regular fa-circle-play"></i>
                             </div>
                             <h5 class="txt-white">A quiet place</h5>
                             <span>Subtitle</span>
                         </div>
-                        <div class="card txt-center">
-                            <div>
+                        <div class="card txt-center pointer">
+                            <div class="img-wrapper relative">
                                 <img src="img/split.jpeg" alt="Split">
+                                    <i class="txt-white fa-regular fa-circle-play"></i>
                             </div>
                             <h5 class="txt-white">Split</h5>
                             <span>Subtitle</span>
                         </div>
-                        <div class="card txt-center">
-                            <div>
+                        <div class="card txt-center pointer">
+                            <div class="img-wrapper relative">
                                 <img src="img/cure.jpeg" alt="A cure for wellnes">
+                                    <i class="txt-white fa-regular fa-circle-play"></i>
                             </div>
                             <h5 class="txt-white">A cure for wellnes</h5>
                             <span>Subtitle</span>
                         </div>
-                        <div class="card txt-center">
-                            <div>
+                        <div class="card txt-center pointer">
+                            <div class="img-wrapper relative">
                                 <img src="img/sinister.jpeg" alt="Sinister">
+                                    <i class="txt-white fa-regular fa-circle-play"></i>
                             </div>
                             <h5 class="txt-white">Sinister</h5>
                             <span>Subtitle</span>
@@ -146,18 +152,20 @@
 
                 <!-- Personal Playlist -->
                 <div>
-                    <h3 class="txt-white">Creato per John Doe</h3>
+                    <h3 class="txt-white pointer">Creato per John Doe</h3>
                     <p>Più ascolti, più accurati saranno i suggerimenti.</p>
                     <div class="personal-playlist row">
-                        <div class="card txt-center">
-                            <div>
+                        <div class="card txt-center pointer">
+                            <div class="img-wrapper relative">
                                 <img src="img/radar.jpeg" alt="Release radar">
+                                    <i class="txt-white fa-regular fa-circle-play"></i>
                             </div>
                             <h5 class="txt-white">Release Radar</h5>
                         </div>
-                        <div class="card txt-center">
-                            <div>
+                        <div class="card txt-center pointer">
+                            <div class="img-wrapper relative">
                                 <img src="img/mixdaily.jpeg" alt="Your Daily mix">
+                                    <i class="txt-white fa-regular fa-circle-play"></i>
                             </div>
                             <h5 class="txt-white">Daily mix 1</h5>
                         </div>
@@ -166,18 +174,20 @@
             
                 <!-- Popular artist -->
                 <div>
-                    <h3 class="txt-white">Artisti più popolari</h3>
+                    <h3 class="txt-white pointer">Artisti più popolari</h3>
                     <p>Più ascolti, più accurati saranno i suggerimenti.</p>
                     <div class="popular-artist row">
-                        <div class="card txt-center">
-                            <div>
+                        <div class="card txt-center pointer">
+                            <div class="img-wrapper relative">
                                 <img src="img/youg.jpeg" alt="Lana del Rey">
+                                    <i class="txt-white fa-regular fa-circle-play"></i>
                             </div>
                             <h5 class="txt-white">Lana del Rey</h5>
                         </div>
-                        <div class="card txt-center">
-                            <div>
+                        <div class="card txt-center pointer">
+                            <div class="img-wrapper relative">
                                 <img src="img/einaudi.jpeg" alt="Einaudi">
+                                    <i class="txt-white fa-regular fa-circle-play"></i>
                             </div>
                             <h5 class="txt-white">Einaudi</h5>
                         </div>
@@ -185,10 +195,10 @@
                 </div>
             </div>
 
-            <!-- UPGRADE BAR -->
+            <!-- CALL TO ACTION -->
 
-            <div id="upgrade-bar" class="bg-black row">
-                <div class="txt-white">EFFETTUA L'UPGRADE</div>
+            <div id="call-to-action" class="bg-black row">
+                <div class="txt-white pointer">EFFETTUA L'UPGRADE</div>
             </div>
         </div>
     </div>
@@ -200,16 +210,16 @@
         <!-- Leftbar -->
 
         <div id="left-footbar" class="row between">
-            <div class="song-info row align-middle">
+            <div class="song-info row align-middle pointer">
                 <img src="img/sinister.jpeg" alt="Sinister album">
                 <div class="marg-left">
-                    <div class="txt-white">Sinister</div>
-                    <div>Brano Nome</div>
+                    <div class="txt-white pointer">Sinister</div>
+                    <div class="white-hover-underline pointer">Brano Nome</div>
                 </div>
             </div>
             <div id="favorites" class="row align-middle just-center">
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-regular fa-folder"></i>
+                <i class="fa-regular fa-heart white-hover pointer"></i>
+                <i class="fa-regular fa-folder white-hover pointer"></i>
             </div>
         </div>
 
@@ -220,19 +230,21 @@
             <!-- Top -->
 
             <div class="top-player row align-middle just-center">
-                <i class="fa-solid fa-shuffle"></i>
-                <i class="fa-sharp fa-solid fa-backward-step"></i>
-                <i class="fa-regular fa-circle-play"></i>
-                <i class="fa-sharp fa-solid fa-backward-step fa-rotate-180"></i>
-                <i class="fa-solid fa-rotate-right"></i>
+                <i class="fa-solid fa-shuffle pointer"></i>
+                <i class="fa-sharp fa-solid fa-backward-step pointer"></i>
+                <i class="fa-regular fa-circle-play scale-play pointer"></i>
+                <i class="fa-sharp fa-solid fa-backward-step fa-rotate-180 pointer"></i>
+                <i class="fa-solid fa-rotate-right pointer"></i>
             </div>
 
             <!-- Bottom -->
             
             <div class="bottom-player row just-center align-middle">
                 <span class="actual-time txt-center">0:25</span>
-                <span class="bar song-progress-bar bg-grey">
-                    <span class="bar bg-white"></span>
+                <span class="bar song-progress-bar bg-grey pointer">
+                    <span class="bar bg-white relative">
+                        <span class="white-point-bar"></span>
+                    </span>
                 </span>
                 <span class="total-time txt-center">4:35</span>
             </div>
@@ -241,11 +253,13 @@
         <!-- Right bar -->
 
         <div id="right-footbar" class="row align-middle between txt-white">
-            <i class="fa-solid fa-list"></i>
-            <i class="fa-sharp fa-solid fa-desktop"></i>
-            <i class="fa-solid fa-volume-high"></i>
-            <span class="bar volume-bar bg-grey">
-                <span class="bar bg-white"></span>
+            <i class="fa-solid fa-list pointer"></i>
+            <i class="fa-sharp fa-solid fa-desktop pointer"></i>
+            <i class="fa-solid fa-volume-high pointer"></i>
+            <span class="bar volume-bar bg-grey pointer">
+                <span class="bar bg-white relative">
+                    <span class="white-point-bar"></span>
+                </span>
             </span>
         </div>
     </footer>    
