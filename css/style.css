@@ -16,7 +16,7 @@ ul{
     --darkblue:#141922;
     --darkgrey:#282828;
     --grey:#838383;
-    --green:#435f26;
+    --green:#adff2f;
     --white:#ffffff;
 }
 
@@ -27,7 +27,7 @@ ul{
  /* LAYOUT */
 
 .wrapper{
-    padding: 1rem 1rem;
+    padding: 0.5rem 1rem 1rem;
 }
 .marg-left{
     margin-left: 0.4rem;
@@ -47,7 +47,7 @@ ul{
 
 body{
     color: var(--grey);
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
 .txt-center{
@@ -99,11 +99,10 @@ body{
 /* Top left bar */
 
 #leftbar{
-    z-index: 2;
-    font-size: 0.8rem;
+    z-index: 1;
+    font-size: 0.7rem;
     padding: 1rem 0 0.3rem;
     flex: 1;
-    overflow: auto;
     min-width: 10rem;
 }
 #logo{
@@ -174,6 +173,17 @@ body{
     overflow-y: scroll;
     position: relative;
 }
+#contents p{
+    font-size: 0.6rem;
+    margin-top: 1rem;
+}
+#contents h3{
+    margin-top: 1.5rem;
+}
+#contents h5{
+    margin: 1rem 0;
+}
+
 
 /* Upgrade bar */
 
@@ -186,6 +196,7 @@ body{
     top: 0;
     justify-content: flex-end;
     padding: 1rem 0.5rem;
+    font-size: 0.7rem;
 }
 #upgrade-bar div{
     padding: 0.5rem 2.5rem;
@@ -200,36 +211,38 @@ body{
 .labels{
     margin-top: 6rem;
     gap: 2rem;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
 }
 .evidence-green{
     border: 1px var(--green) solid;
     width: 50%;
+    margin-top: 0.2rem;
 }
 
+/* Recently played */
 
+.recently, .personal-playlist, .popular-artist{
+    gap: 0.7rem;
+}
+.card{
+    width: calc((100%/6) - 0.7rem);
+    margin-top: 2rem;
+}
+.card img{
+    max-width: 100%;
+}
 
+.card span{
+    font-size: 0.6rem;
+}
 
+/* Popular artist */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.popular-artist .card img{
+    border-radius: 50%;
+    width: 10rem;
+    object-fit: cover;
+}
 
 
 /* FOOTER */
@@ -240,6 +253,7 @@ footer{
     width: 100%;
     padding: 0 0.5rem;
     font-size: 0.6rem;
+    z-index: 2;
  }
 
 /* Left footbar */
