@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="css/library/framework12col.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="css/library/framework12col.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,8 +17,7 @@
     <div id="upper">
 
         <!-- LEFTBAR SECTION -->
-        <div id="leftbar" class="bg-black row">
-            <div id="leftbar-big" class="row-column">
+        <div id="leftbar" class="bg-black row-column">
                 <div class="padding" id="logo">
                     <img class="pointer" src="img/logo.svg" alt="Logo Spotify">
                 </div>
@@ -25,22 +25,22 @@
                     <img src="img/home.svg" alt="Home">
                     <span class="marg-left">Home</span>
                 </div>
-                <div class="main-menu row align-middle padding white-hover pointer">
+                <div class="main-menu row align-middle border-left-transparent padding white-hover pointer">
                     <img src="img/search.svg" alt="Search">
                     <span class="marg-left">Cerca</span>
                 </div>
-                <div class="main-menu row align-middle padding white-hover pointer">
+                <div class="main-menu row align-middle border-left-transparent padding white-hover pointer">
                     <img src="img/libreria.svg" alt="libreria">
                     <span class="marg-left">La tua libreria</span>
                 </div>    
-                <div class="playlist-section padding white-hover pointer">
+                <div class="playlist-section padding border-left-transparent white-hover pointer">
                     <span class="txt-white">PLAYLIST</span>
                     <div class="new-playlist row align-middle">
                         <i class="fa-sharp fa-solid fa-square-plus"></i>
                         <div class="marg-left">Crea Playlist</div>
                     </div>
                 </div>   
-                <ul class="playlist padding">
+                <ul class="playlist padding border-left-transparent">
                     <li class="white-hover pointer">Nome Playlist</li>
                     <li class="white-hover pointer">Nome Playlist</li>
                     <li class="white-hover pointer">Nome Playlist</li>
@@ -49,30 +49,28 @@
                     <li class="white-hover pointer">Nome Playlist</li>
                     <li class="white-hover pointer">Nome Playlist</li>
                 </ul>  
-                <div id="bottom-leftbar" class="padding">
+                <div id="bottom-leftbar" class="padding border-left-transparent">
                     <div class="row align-middle pointer white-hover">
                         <img src="img/download.svg" alt="Download image">
                         <span class="marg-left">Installa app</span>
                     </div>
-                    <div class="row align-middle pointer">
+                    <div class="row align-middle pointer border-left-transparent">
                         <span id="profile"></span>
                         <span class="marg-left txt-white">John Doe</span>
                     </div>
                 </div>
+        </div>
+        <div id="leftbar-small" class="row-column bg-black">
+            <div>
+                <img class="pointer" src="img/logo-small.svg" alt="Logo small">
+                <img class="pointer" src="img/home.svg" alt="Home">
+                <img class="pointer" src="img/search.svg" alt="Search">
+                <img class="pointer" src="img/libreria.svg" alt="Library">
             </div>
-            <div id="leftbar-small" class="row row-column">
-                <div>
-                    <img class="pointer" src="img/logo-small.svg" alt="Logo small">
-                    <img class="pointer" src="img/home.svg" alt="Home">
-                    <img class="pointer" src="img/search.svg" alt="Search">
-                    <img class="pointer" src="img/libreria.svg" alt="Library">
-                </div>
-                <div id="bottom-leftbar-small" class="row-column align-middle">
-                    <img class="pointer" src="img/download.svg" alt="Download image">
-                    <span class="pointer" id="profile"></span>
-                </div>
+            <div id="bottom-leftbar-small" class="row-column align-middle">
+                <img class="pointer" src="img/download.svg" alt="Download image">
+                <span class="pointer" id="profile"></span>
             </div>
-
         </div>
 
         <!-- CONTENTS SECTION -->

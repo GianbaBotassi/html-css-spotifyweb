@@ -152,12 +152,12 @@ body{
     font-size: 0.7rem;
     padding: 1rem 0 0.3rem;
     min-width: 12rem;
-
 }
 /* Top left bar */
 
 #logo{
     height: 4rem;
+    padding-bottom: 1rem;
 }
 #logo img{
     max-width: 100%;
@@ -177,6 +177,9 @@ body{
 }
 .border-left-green{
     border-left: 3px solid var(--green);
+}
+.border-left-transparent{
+    border-left: 3px solid transparent;
 }
 
 /* Playlist */
@@ -200,10 +203,10 @@ body{
 #bottom-leftbar{
     margin-top: auto;
 }
-#bottom-leftbar img, #bottom-leftbar-small img {
+#leftbar #bottom-leftbar img{
     height: 0.9rem;
 }
-#bottom-leftbar div:first-child{
+#leftbar #bottom-leftbar div:first-child{
     padding-bottom: 0.5rem;
     border-bottom: 1px var(--grey) solid;
     margin-bottom: 1rem;
@@ -222,7 +225,7 @@ body{
         /* Leftbar hidden, appear at xs size  */
 #leftbar-small{
     display: none;
-    width: 100%;
+    min-width: 7rem;
     padding: 0.3rem;
 }
 #leftbar-small div:last-of-type{
@@ -233,7 +236,12 @@ body{
     margin-bottom: 0.5rem;
 }
 #leftbar-small #bottom-leftbar-small img{
-    margin-left: -0.1rem;
+    margin-left: -0.4rem;
+    height: 3rem;
+}
+#leftbar-small #profile{
+    height: 3rem;
+    width: 3rem;
 }
 
 /*************************************************
@@ -443,10 +451,6 @@ footer{
         width: calc((100%/2) - 0.7rem);
     }
     #leftbar{
-        min-width: 2rem;
-        padding: 0;    
-    }
-    #leftbar-big{
         display: none;
     }
     #leftbar-small{
